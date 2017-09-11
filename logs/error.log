@@ -1,0 +1,900 @@
+2017-09-08 01:18:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-08 01:20:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-08 01:29:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:50:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:50:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-09 23:56:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:56:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:56:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:57:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:57:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-09 23:57:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:00:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:01:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:01:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:01:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:04:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:04:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:04:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:04:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:04:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:11:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:11:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:11:37 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login?redirect=%2Fusers
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-10 00:13:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:13:07 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login?redirect=%2Fusers
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-10 00:13:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:13:08 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login?redirect=%2Fusers
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-10 00:13:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:13:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:13:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:13:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tags could not be found.
+Exception Attributes: array (
+  'class' => 'Tags',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /tags
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-10 00:14:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:14:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:15:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:15:51 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 00:16:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:18:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:18:00 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/1
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('1')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 00:20:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:20:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:20:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:20:37 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 00:21:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:24:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:24:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:24:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:29:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:29:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:30:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:33:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:33:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:38:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:38:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:38:45 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 00:43:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:51:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:51:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:51:10 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 00:57:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:57:36 Error: [ParseError] syntax error, unexpected ']' in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Model/Table/UsersTable.php on line 31
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/marlon/Do...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Model\\Table...')
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Us...', 'App')
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php(238): Cake\Core\App::className('Users', 'Model/Table', 'Table')
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Users', Array)
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Users')
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(359): Cake\Controller\Controller->loadModel('Users')
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php(23): Cake\Controller\Controller->__get('Users')
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->index()
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2017-09-10 00:58:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:58:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:59:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 00:59:05 Error: [Error] Call to a member function error() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 58
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:01:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:01:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:01:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:01:20 Error: [Error] Call to a member function error() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 58
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:01:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:01:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:02:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:02:01 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/3
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('3')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:04:09 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/4
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('4')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:04:29 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/2
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('2')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:05:05 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:15:32 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/5
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('5')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:15:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:16:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:16:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:16:13 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:21:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:21:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:21:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:21:32 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:24:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:24:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:25:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:25:07 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:26:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:27:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:27:02 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/6
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('6')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:27:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:27:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:27:13 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/7
+Referer URL: http://localhost:8765/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('7')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:27:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:27:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:29:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:29:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:31:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:31:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:31:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:31:26 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 101
+Request URL: /users/delete/8
+Referer URL: http://localhost:8765/users/edit/8
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('8')
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:31:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:31:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:32:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:32:15 Error: [Error] Call to a member function success() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 54
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->add()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 01:35:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:35:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:35:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:35:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:36:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:37:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:38:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:38:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:38:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:38:54 Error: [Error] Call to a member function allow() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/AppController.php on line 62
+Request URL: /users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(263): App\Controller\AppController->initialize()
+#1 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(45): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-10 01:39:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:39:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:39:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:40:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:40:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:40:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:41:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:41:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:41:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:41:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:45:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:45:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:45:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:45:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:46:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-09-10 01:46:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:47:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:47:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:47:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:47:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:48:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:48:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 01:48:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:04:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:04:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:06:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:06:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:07:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:07:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:07:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:07:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:07:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:08:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:09:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:32:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:33:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 02:33:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:04:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:04:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:04:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:04:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:05:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:05:03 Error: [Error] Call to a member function logout() on boolean in /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php on line 126
+Request URL: /users/logout
+Client IP: 127.0.0.1
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->logout()
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#14 {main}
+
+
+2017-09-10 03:07:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:07:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:08:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:08:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:08:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:08:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:08:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:52:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:52:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:55:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:55:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:55:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:56:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:56:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:56:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 03:59:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:00:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:00:20 Error: [Cake\Network\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/14
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php(98): Cake\Http\ServerRequest->allowMethod(Array)
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('14')
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-10 04:00:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:01:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:02:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:02:02 Error: [Cake\Network\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /users/delete/15
+Stack Trace:
+#0 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/src/Controller/UsersController.php(98): Cake\Http\ServerRequest->allowMethod(Array)
+#1 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Controller/Controller.php(441): App\Controller\UsersController->delete('15')
+#2 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/marlon/Documentos/processoSoftware/Sistema-Livros-ABZ/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-10 04:31:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-10 04:31:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:49:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:49:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:50:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:50:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:50:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 21:50:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:29:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:29:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:30:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:33:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:33:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:33:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:33:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:34:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2017-09-11 22:34:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
