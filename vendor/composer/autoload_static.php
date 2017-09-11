@@ -26,6 +26,10 @@ class ComposerStaticInit02dad4e05e5cfc5b99de831a0fcb7e3f
         array (
             'XdgBaseDir\\' => 11,
         ),
+        'T' => 
+        array (
+            'TwitterBootstrap\\' => 17,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -95,6 +99,10 @@ class ComposerStaticInit02dad4e05e5cfc5b99de831a0fcb7e3f
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
+        ),
+        'TwitterBootstrap\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp-brasil/twitter-bootstrap/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
