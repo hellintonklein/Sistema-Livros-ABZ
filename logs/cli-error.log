@@ -1,0 +1,20 @@
+2017-09-13 00:26:04 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php on line 115
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(238): Phinx\Db\Adapter\MysqlAdapter->connect()
+#1 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/CakeAdapter.php(57): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\MysqlAdapter), Object(Cake\Database\Connection))
+#3 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(72): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#12 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#14 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
