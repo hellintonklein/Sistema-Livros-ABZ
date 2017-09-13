@@ -1,7 +1,7 @@
 <?php
 use Migrations\AbstractMigration;
 
-class CreateUsers extends AbstractMigration
+class CreateBooks extends AbstractMigration
 {
     /**
      * Change Method.
@@ -12,39 +12,51 @@ class CreateUsers extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('users');
-        $table->addColumn('username', 'string', [
+        $table = $this->table('books');
+        $table->addColumn('shelf_id', 'integer', [
+            'default' => null,
+            'limit' => 11,
+            'null' => false,
+        ]);
+        //      ->addForeignKey('shelf_id', 'shelfs', 'id', array('delete'=>'NO_ACTION', 'update'=>'NO_ACTION'));
+        $table->addColumn('sumario', 'integer', [
+            'default' => null,
+            'limit' => 11,
+            'null' => true,
+        ]);
+        $table->addColumn('title', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => false,
         ]);
-        $table->addColumn('password', 'string', [
+        $table->addColumn('author', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => false,
         ]);
-        $table->addColumn('name', 'string', [
+        $table->addColumn('editor', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => false,
         ]);
-        $table->addColumn('email', 'string', [
+        $table->addColumn('pages', 'integer', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 11,
             'null' => false,
         ]);
-        $table->addColumn('phone', 'string', [
+        $table->addColumn('quantity', 'integer', [
+            'default' => null,
+            'limit' => 11,
+            'null' => false,
+        ]);
+        $table->addColumn('classification', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => true,
         ]);
-        $table->addColumn('role', 'string', [
-            'default' => 'N',
-            'limit' => 255,
-            'null' => false,
-        ]);
         $table->addColumn('created', 'datetime', [
             'default' => 'CURRENT_TIMESTAMP',
+            'limit' => 255,
             'null' => false,
         ]);
         $table->addColumn('modified', 'datetime', [
@@ -54,6 +66,3 @@ class CreateUsers extends AbstractMigration
         $table->create();
     }
 }
-
-
-// cake bake migration CreateUsers username:string password:string created modified

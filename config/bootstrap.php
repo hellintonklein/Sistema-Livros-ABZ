@@ -217,3 +217,6 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('TwitterBootstrap');
+Plugin::load('Migrations');
+
+Plugin::load('Migrations');
