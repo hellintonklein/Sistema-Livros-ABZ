@@ -43,6 +43,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+		$this->viewBuilder()->theme('TwitterBootstrap');
         $this->loadComponent('Auth', [
             'authError' => 'Vocẽ deve fazer o login para acessar os recursos.',
             'authenticate' => [
@@ -61,7 +62,9 @@ class AppController extends Controller
         // Permite a ação display, assim nosso pages controller
         // continua a funcionar.
         $this->Auth->allow(['display']);
-
+		$this->set('project_name', 'Sistema ABZ');
+		
+		
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
