@@ -277,3 +277,22 @@ Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 
 
 
 
+2017-09-15 23:30:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trabalho_processo_software.my_model' doesn't exist in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'my_model', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('my_model', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('my_model')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'my_model', 'MyModel')
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('MyModel')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('MyModel')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('MyModel', 0)
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(494): Bake\Shell\BakeShell->all('MyModel')
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

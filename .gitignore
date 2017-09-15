@@ -10,3 +10,4 @@
 !/tmp/tests/empty
 !/logs/*
 /config/app.php
+/nbproject/private/
