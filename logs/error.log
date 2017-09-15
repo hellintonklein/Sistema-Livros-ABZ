@@ -1110,3 +1110,763 @@ Stack Trace:
 #28 {main}
 
 
+2017-09-15 21:45:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class View.html could not be found.
+Exception Attributes: array (
+  'class' => 'View.html',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /view.html
+Referer URL: http://localhost:8765/
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(85): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(36): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-09-15 21:46:07 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'franco', Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(368): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin')
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin', 'admin')
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\UsersController.php(113): Cake\Controller\Component\AuthComponent->identify()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-09-15 21:46:44 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(368): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin')
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin', 'admin')
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\UsersController.php(113): Cake\Controller\Component\AuthComponent->identify()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-09-15 21:47:01 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(368): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin')
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin', 'admin')
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\UsersController.php(113): Cake\Controller\Component\AuthComponent->identify()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-09-15 21:50:59 Error: [PDOException] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', 'root', Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(368): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(531): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1576): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1178): Cake\ORM\Table->query()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(169): Cake\ORM\Table->find('all', Array)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('admin')
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('admin', 'admin')
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(820): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\UsersController.php(113): Cake\Controller\Component\AuthComponent->identify()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\UsersController->login()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#33 {main}
+
+
+2017-09-15 22:19:13 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trabalho_processo_software.shelves' doesn't exist
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'shelves', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('shelves', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('shelves')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(440): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(404): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BooksTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(756): Cake\ORM\Query->contain(Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(2203): Cake\ORM\Query->applyOptions(Array)
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1181): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-09-15 22:20:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trabalho_processo_software.shelves' doesn't exist
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'shelves', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('shelves', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('shelves')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(440): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(404): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BooksTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(756): Cake\ORM\Query->contain(Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(2203): Cake\ORM\Query->applyOptions(Array)
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1181): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-09-15 22:22:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trabalho_processo_software.shelves' doesn't exist
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'shelves', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('shelves', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('shelves')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(440): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(404): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BooksTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(756): Cake\ORM\Query->contain(Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(2203): Cake\ORM\Query->applyOptions(Array)
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1181): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2017-09-15 22:23:09 Error: [InvalidArgumentException] Books is not associated with Shelves
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BooksTable), 'Shelves', Array, Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BooksTable))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BooksTable))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BooksTable), true)
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2017-09-15 22:24:37 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC) in C:\xampp\htdocs\Sistema-Livros-ABZ\src\Model\Table\BooksTable.php on line 64
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Bo...', 'App')
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Books', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Books', Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Books')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Books')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->__get('Books')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-15 22:25:12 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC) in C:\xampp\htdocs\Sistema-Livros-ABZ\src\Model\Table\BooksTable.php on line 92
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Bo...', 'App')
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Books', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Books', Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Books')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Books')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->__get('Books')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-15 22:25:20 Error: [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\Sistema-Livros-ABZ\src\Model\Table\BooksTable.php on line 99
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Bo...', 'App')
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Books', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Books', Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Books')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Books')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->__get('Books')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-15 22:25:45 Error: [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\Sistema-Livros-ABZ\src\Model\Table\BooksTable.php on line 99
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Bo...', 'App')
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Books', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Books', Array)
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Books')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(359): Cake\Controller\Controller->loadModel('Books')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->__get('Books')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2017-09-15 22:26:04 Error: [InvalidArgumentException] Books is not associated with Shelves
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BooksTable), 'Shelves', Array, Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BooksTable))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BooksTable))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BooksTable), true)
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2017-09-15 22:26:20 Error: [InvalidArgumentException] Books is not associated with Shelves
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BooksTable), 'Shelves', Array, Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BooksTable))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BooksTable))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BooksTable), true)
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2017-09-15 22:26:30 Error: [InvalidArgumentException] Books is not associated with Shelves
+Request URL: /Books
+Referer URL: http://localhost:8765/users/login?redirect=%2FBooks
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BooksTable), 'Shelves', Array, Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BooksTable))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BooksTable))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BooksTable), true)
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\Paginator.php(186): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(201): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\BooksTable), Array, Array)
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(719): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BooksTable), Array)
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(25): Cake\Controller\Controller->paginate(Object(App\Model\Table\BooksTable))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->index()
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2017-09-15 22:28:06 Error: [RuntimeException] Table "App\Model\Table\BooksTable" is not associated with "Shelves"
+Request URL: /books/add
+Referer URL: http://localhost:8765/Books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(65): Cake\ORM\Table->__get('Shelves')
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->add()
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-09-15 22:28:34 Error: [RuntimeException] Table "App\Model\Table\BooksTable" is not associated with "Disciplines"
+Request URL: /books/add
+Referer URL: http://localhost:8765/Books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(66): Cake\ORM\Table->__get('Disciplines')
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->add()
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-09-15 22:29:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Reservations could not be found.
+Exception Attributes: array (
+  'class' => 'Reservations',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /reservations
+Referer URL: http://localhost:8765/books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-15 22:29:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Disciplines could not be found.
+Exception Attributes: array (
+  'class' => 'Disciplines',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /disciplines
+Referer URL: http://localhost:8765/books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-15 22:29:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Disciplines could not be found.
+Exception Attributes: array (
+  'class' => 'Disciplines',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /disciplines/add
+Referer URL: http://localhost:8765/books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-09-15 22:29:58 Error: [InvalidArgumentException] Books is not associated with Shelves
+Request URL: /books/view/1
+Referer URL: http://localhost:8765/books
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(336): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BooksTable), 'Shelves', Array, Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(466): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BooksTable))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(437): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BooksTable))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1064): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BooksTable), true)
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1016): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(259): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Connection.php(312): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(1037): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(287): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Query.php(986): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(415): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(426): Cake\ORM\Query->first()
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(1439): Cake\ORM\Query->firstOrFail()
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Controller\Controller.php(441): App\Controller\BooksController->view('1')
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\BaseApplication.php(103): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\xampp\htdocs\Sistema-Livros-ABZ\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
