@@ -9,3 +9,4 @@
 /tmp/tests/*
 !/tmp/tests/empty
 !/logs/*
+/config/app.php
