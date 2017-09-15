@@ -94,3 +94,17 @@ Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 
 
 
 
+2017-09-15 00:10:05 Error: [RuntimeException] Unknown command `cake start`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'start')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2017-09-15 01:17:10 Error: [RuntimeException] Unknown command `cake start`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'start')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

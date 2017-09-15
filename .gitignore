@@ -8,3 +8,4 @@
 !/tmp/sessions/empty
 /tmp/tests/*
 !/tmp/tests/empty
+/nbproject/private/
