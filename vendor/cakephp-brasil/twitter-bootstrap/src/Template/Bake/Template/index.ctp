@@ -84,9 +84,21 @@ $fields = collection($fields)
         $pk = '$' . $singularVar . '->' . $primaryKey[0];
 %>
                 <td class="actions" style="white-space:nowrap">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', <%= $pk %>], ['class'=>'btn btn-default btn-xs']) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', <%= $pk %>], ['class'=>'btn btn-primary btn-xs']) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', <%= $pk %>], ['confirm' => __('Are you sure you want to delete # {0}?', <%= $pk %>), 'class'=>'btn btn-danger btn-xs']) ?>
+				
+				 <?= $this->Html->link(__(''), ['action' => 'view',  <%= $pk %>],
+			            ['class'=>'btn btn-default btn-xs glyphicon glyphicon-search',
+						'data-tooltip'=>'tooltip',
+						'title'=> 'Visualizar']) ?> 
+					
+                    <?= $this->Html->link(__(''), ['action' => 'edit', <%= $pk %>],
+						['class'=>'btn btn-primary btn-xs glyphicon glyphicon-edit',
+						'data-tooltip'=>'tooltip',
+						'title'=> 'Editar']) ?>
+                    <?= $this->Form->postLink(__(''), ['action' => 'delete',  <%= $pk %>], 
+						['confirm' => 'Confirma a exclusão', 'class'=>'btn btn-danger btn-xs glyphicon glyphicon-remove', 
+						'data-tooltip'=>'tooltip',
+						'title'=> 'Excluir']) ?>
+				
                 </td>
             </tr>
             <?php endforeach; ?>

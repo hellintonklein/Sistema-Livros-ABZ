@@ -76,11 +76,11 @@ class UsersController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('O usuario foi salvo com sucesso.'));
+                $this->Flash->success(__('O usuário foi salvo com sucesso.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('O usuario não foi salvo. Tente novamente.'));
+            $this->Flash->error(__('O usuário não foi salvo. Tente novamente.'));
         }
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);
@@ -98,9 +98,9 @@ class UsersController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
-            $this->Flash->success(__('O usuario foi excluido com sucesso.'));
+            $this->Flash->success(__('O usuário foi excluido com sucesso.'));
         } else {
-            $this->Flash->error(__('O usuario não foi salvo. Tente novamente.'));
+            $this->Flash->error(__('O usuário não foi salvo. Tente novamente.'));
         }
 
         return $this->redirect(['action' => 'index']);
@@ -115,7 +115,7 @@ class UsersController extends AppController
                 $this->Auth->setUser($user);
                 return $this->redirect($this->Auth->redirectUrl());
             }
-            $this->Flash->error('Seu nome de usuario ou senha estão incorretos.');
+            $this->Flash->error('Seu nome de usuário ou senha estão incorretos.');
         }
     }
 
