@@ -6,7 +6,7 @@
 <nav class="col-md-2 columns" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
         <li class="active"><a><?= __('Ações') ?></a></li>
-        <li><?= $this->Html->link(__('List {0}', 'Usuários'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Lista {0}', 'Usuários'), ['action' => 'index']) ?></li>
    
     </ul>
 </nav>
@@ -15,8 +15,11 @@
     <fieldset>
         <legend><?= __('Cadastrar Usuário') ?></legend>
         <?php
-            echo $this->Form->control('username');
-            echo $this->Form->control('password');
+            echo $this->Form->control('username', ['label'=> 'Nome de usuário']);
+            echo $this->Form->control('password', ['label'=> 'Senha']);
+            echo $this->Form->control('email', ['label'=> 'Email']);
+            echo $this->Form->control('name', ['label'=> 'Nome']);
+            echo $this->Form->control('phone', ['label'=> 'Telefone']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Salvar')) ?>
