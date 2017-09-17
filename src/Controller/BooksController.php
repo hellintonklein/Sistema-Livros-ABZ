@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Books Controller
@@ -43,6 +44,27 @@ class BooksController extends AppController
 
         $this->set('book', $book);
         $this->set('_serialize', ['book']);
+    }
+    /**
+     * viewShelf method
+     *
+     * 
+     * @param type $id
+     */
+    public function viewShelf($id = null)
+    {
+        $shelfTable = TableRegistry::get('Shelfs');
+        $bookTable = TableRegistry::get('Books');
+        $user = $this->Auth->user('id');
+        
+        $query = $shelfTable->find('all')
+            ->where(['user_id >' == $user]);
+        $books = $bookTable->find('all')
+                ->where(['shelf_id' => $query->first()]);
+        
+        
+        $this->set('book', $books);
+        $this->set('_serialize', ['books']);
     }
 
     /**

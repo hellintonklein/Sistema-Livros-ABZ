@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -47,18 +48,27 @@ class UsersController extends AppController
      */
     public function add()
     {
+       
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
+                $this->addShelf($user);
                 $this->Flash->success(__('O usuario foi salvo com sucesso.'));
-
+                    
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('O usuario não foi salvo. Tente novamente.'));
         }
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);
+    }
+    //Cria a estante no momento da criação do usuário.
+    private function addShelf($user){
+        $shelfTable = TableRegistry::get('Shelfs');
+        $shelf = $shelfTable->newEntity();
+        $shelf->user = $user;
+        if($shelfTable->save($shelf)){}
     }
 
     /**
