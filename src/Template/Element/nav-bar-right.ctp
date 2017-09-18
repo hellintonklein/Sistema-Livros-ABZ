@@ -1,7 +1,5 @@
 <?php
-if (!$this->request->session()->read('Auth.User')){
-    
-?> 
+if (!$this->request->session()->read('Auth.User')){ ?> 
     <ul class="nav navbar-nav navbar-right">
         <li><a href="<?php echo $this->Url->build([
         "controller" => "Users",
@@ -10,9 +8,7 @@ if (!$this->request->session()->read('Auth.User')){
         "controller" => "Users",
         "action" => "login"]); ?>"><span class="glyphicon glyphicon-log-in"></span> &nbsp Acessar</a></li>
     </ul>
-<?php
-} else {
-?>
+<?php } else { ?>
     <ul class="nav navbar-nav navbar-right">
          <li><a href="<?php echo $this->Url->build([
         "controller" => "shelfs",
