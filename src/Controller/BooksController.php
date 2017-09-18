@@ -17,6 +17,13 @@ class BooksController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow('find');
+    }
+
     public function index()
     {
         // $this->paginate = [
