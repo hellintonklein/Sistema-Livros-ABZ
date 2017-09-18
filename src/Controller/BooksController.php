@@ -18,6 +18,16 @@ class BooksController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow('find');
+        $this->Auth->allow('view');
+        $this->Auth->allow('findWithTitle');
+        
+    }
+
     public function index()
     {
         // $this->paginate = [
@@ -135,5 +145,20 @@ class BooksController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+    
+    public function find(){
+        
+         $books =  $this->Books->find('all');
+         $this->response->body(json_encode($books));
+         return $this->response;
+    }
+    
+    public function findWithTitle($title){
+        
+         $books =  $this->Books->find('all')
+            ->where(['Books.title LIKE' => '%'.$title.'%']);
+         $this->response->body(json_encode($books));
+         return $this->response;
     }
 }
