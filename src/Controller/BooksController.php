@@ -114,4 +114,11 @@ class BooksController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function find(){
+        
+         $books =  $this->Books->find('all');
+         $this->response->body(json_encode($books));
+         return $this->response;
+    }
 }

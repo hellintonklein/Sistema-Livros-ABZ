@@ -91,6 +91,24 @@ Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
 Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
 Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
 [main] - [internal], line ??
+
+
+
+2017-09-15 00:10:05 Error: [RuntimeException] Unknown command `cake start`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'start')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2017-09-15 01:17:10 Error: [RuntimeException] Unknown command `cake start`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'start')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+
 2017-09-15 21:52:06 Error: [RuntimeException] Unknown command `cake cake`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 173
 Stack Trace:
 #0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'cake')
@@ -294,5 +312,54 @@ Stack Trace:
 #12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
 #13 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
 #14 {main}
+
+
+
+2017-09-18 01:54:41 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'migration')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2017-09-18 01:54:49 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'books' already exists in /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('CREATE TABLE `b...')
+#1 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(306): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `b...')
+#2 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/CakeAdapter.php(444): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Migrations\Table))
+#3 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(609): Migrations\CakeAdapter->createTable(Object(Migrations\Table))
+#4 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Table.php(89): Phinx\Db\Table->create()
+#5 /var/www/html/Sistema-Livros-ABZ/config/Migrations/20170916023712_CreateAllMigration.php(65): Migrations\Table->create()
+#6 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateAllMigration->up()
+#7 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateAllMigration), 'up')
+#8 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(CreateAllMigration), 'up')
+#9 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-18 01:54:49 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-18 01:54:49 Warning: Warning (2): fwrite(): 123 is not a valid stream resource in [/var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
 
 

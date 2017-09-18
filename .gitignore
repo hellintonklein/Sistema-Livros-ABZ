@@ -10,4 +10,8 @@
 !/tmp/tests/empty
 !/logs/*
 /config/app.php
+<<<<<<< HEAD
 /nbproject/private/
+=======
+/nbproject/private/
+>>>>>>> c7949bf34b514e9c07fcb05c0dbbc77969026602

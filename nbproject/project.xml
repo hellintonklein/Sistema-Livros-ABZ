@@ -3,7 +3,11 @@
     <type>org.netbeans.modules.php.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
+<<<<<<< HEAD
+            <name>app</name>
+=======
             <name>Sistema-Livros-ABZ</name>
+>>>>>>> c7949bf34b514e9c07fcb05c0dbbc77969026602
         </data>
     </configuration>
 </project>
