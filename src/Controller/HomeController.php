@@ -26,7 +26,7 @@ use Cake\View\Exception\MissingTemplateException;
  *
  * @link https://book.cakephp.org/3.0/en/controllers/pages-controller.html
  */
-class PagesController extends AppController
+class HomeController extends AppController
 {
 
     /**
@@ -40,6 +40,14 @@ class PagesController extends AppController
      */
     public function display(...$path)
     {
+        $return = $this->requestAction(array('controller'=>'Books', 'action'=>'find'));
+       if($return == 'null'){
+           $this->Flash->error("Não foram encontrados livros");
+       }
+        $books = json_decode($return);
+       $this->set('books', $books);
+         $this->set('_serialize', ['books']);
+        
         $count = count($path);
         if (!$count) {
             return $this->redirect('/');
@@ -65,5 +73,16 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
+    }
+    
+    
+    public function teste() {
+        
+       $books = $this->requestAction(array('controller'=>'Books', 'action'=>'find'));
+       if($books != 'null'){
+           $this->Flash->error("Não foram encontrados livros");
+       }
+       
+       $this->set('books', $books);
     }
 }

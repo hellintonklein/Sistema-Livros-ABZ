@@ -91,7 +91,6 @@ Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
 Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
 Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
 [main] - [internal], line ??
-<<<<<<< HEAD
 
 
 
@@ -109,5 +108,258 @@ Stack Trace:
 #2 {main}
 
 
-=======
->>>>>>> f2321cc29419366b57a8fe07d752cccc98e99471
+
+2017-09-15 21:52:06 Error: [RuntimeException] Unknown command `cake cake`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 173
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'cake')
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2017-09-15 21:52:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(639): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(675): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\config\Seeds\UsersSeed.php(29): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(514): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-15 21:52:21 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-15 21:52:21 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE\src\Console\ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE\src\Console\ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE\src\Log\Engine\ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
+Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2017-09-15 21:53:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(639): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(675): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\config\Seeds\UsersSeed.php(29): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(514): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-15 21:53:16 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-15 21:53:16 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE\src\Console\ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE\src\Console\ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE\src\Log\Engine\ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
+Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2017-09-15 21:53:29 Error: [Symfony\Component\Console\Exception\CommandNotFoundException] Command "seeds" is not defined.
+
+Did you mean this?
+    seed in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php on line 596
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(205): Symfony\Component\Console\Application->find('seeds')
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'seeds')
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#7 {main}
+
+
+2017-09-15 21:53:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(639): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(675): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\config\Seeds\UsersSeed.php(29): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(514): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-15 21:53:32 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-15 21:53:32 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE\src\Console\ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE\src\Console\ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE\src\Log\Engine\ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
+Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2017-09-15 21:53:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list' in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 392
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(392): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\CakeAdapter.php(400): Phinx\Db\Adapter\PdoAdapter->insert(Object(Phinx\Db\Table), Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(651): Migrations\CakeAdapter->insert(Object(Phinx\Db\Table), Array)
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(639): Phinx\Db\Table->saveData()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(675): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\config\Seeds\UsersSeed.php(29): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(154): UsersSeed->run()
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(395): Phinx\Migration\Manager\Environment->executeSeed(Object(UsersSeed))
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(514): Phinx\Migration\Manager->executeSeed('default', Object(UsersSeed))
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(110): Phinx\Migration\Manager->seed('default')
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\symfony\console\Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#18 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-15 21:53:39 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-15 21:53:39 Warning: Warning (2): fwrite(): supplied resource is not a valid stream resource in [C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE\src\Console\ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE\src\Console\ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE\src\Log\Engine\ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE\src\Log\Log.php, line 384
+Cake\Log\Log::warning() - CORE\src\Log\Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE\src\Database\Connection.php, line 132
+[main] - [internal], line ??
+
+
+
+2017-09-15 23:30:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trabalho_processo_software.my_model' doesn't exist in C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'my_model', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('my_model', Array)
+#2 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Schema\CachedCollection->describe('my_model')
+#3 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\ORM\Table.php(653): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(217): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'my_model', 'MyModel')
+#7 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('MyModel')
+#8 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('MyModel')
+#9 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('MyModel', 0)
+#10 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\bake\src\Shell\BakeShell.php(258): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\Shell.php(494): Bake\Shell\BakeShell->all('MyModel')
+#12 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Console\CommandRunner.php(140): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\Sistema-Livros-ABZ\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+
+2017-09-18 01:54:41 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 173
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(136): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'migration')
+#1 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2017-09-18 01:54:49 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'books' already exists in /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 338
+Stack Trace:
+#0 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('CREATE TABLE `b...')
+#1 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(306): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `b...')
+#2 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/CakeAdapter.php(444): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Migrations\Table))
+#3 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(609): Migrations\CakeAdapter->createTable(Object(Migrations\Table))
+#4 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Table.php(89): Phinx\Db\Table->create()
+#5 /var/www/html/Sistema-Livros-ABZ/config/Migrations/20170916023712_CreateAllMigration.php(65): Migrations\Table->create()
+#6 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateAllMigration->up()
+#7 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(366): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateAllMigration), 'up')
+#8 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(342): Phinx\Migration\Manager->executeMigration('default', Object(CreateAllMigration), 'up')
+#9 /var/www/html/Sistema-Livros-ABZ/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Command/Migrate.php(65): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Command/Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(888): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(224): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Sistema-Livros-ABZ/vendor/symfony/console/Application.php(125): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/Shell.php(508): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 /var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/CommandRunner.php(140): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#20 /var/www/html/Sistema-Livros-ABZ/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#21 {main}
+
+
+2017-09-18 01:54:49 Warning: The connection is going to be closed but there is an active transaction.
+2017-09-18 01:54:49 Warning: Warning (2): fwrite(): 123 is not a valid stream resource in [/var/www/html/Sistema-Livros-ABZ/vendor/cakephp/cakephp/src/Console/ConsoleOutput.php, line 253]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+fwrite - [internal], line ??
+Cake\Console\ConsoleOutput::_write() - CORE/src/Console/ConsoleOutput.php, line 253
+Cake\Console\ConsoleOutput::write() - CORE/src/Console/ConsoleOutput.php, line 188
+Cake\Log\Engine\ConsoleLog::log() - CORE/src/Log/Engine/ConsoleLog.php, line 94
+Cake\Log\Log::write() - CORE/src/Log/Log.php, line 384
+Cake\Log\Log::warning() - CORE/src/Log/Log.php, line 469
+Cake\Database\Connection::__destruct() - CORE/src/Database/Connection.php, line 132
+[main] - [internal], line ??
+
+
+

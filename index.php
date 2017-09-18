@@ -14,5 +14,3 @@
  */
 
 require 'webroot' . DIRECTORY_SEPARATOR . 'index.php';
-
-echo DIRECTORY_SEPARATOR;

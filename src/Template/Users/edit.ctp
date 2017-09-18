@@ -20,8 +20,11 @@
     <fieldset>
         <legend><?= __('Editar usuario') ?></legend>
         <?php
-            echo $this->Form->control('username');
-            echo $this->Form->control('password');
+            echo $this->Form->control('username', ['label'=> 'Nome de usuário']);
+            echo $this->Form->control('password', ['label'=> 'Senha']);
+            echo $this->Form->control('email', ['label'=> 'Email']);
+            echo $this->Form->control('name', ['label'=> 'Nome']);
+            echo $this->Form->control('phone', ['label'=> 'Telefone']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Salvar')) ?>
