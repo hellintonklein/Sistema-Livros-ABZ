@@ -41,18 +41,18 @@ use Cake\Validation\Validator;
 
         $this->addBehavior('Timestamp');
 
-//        $this->belongsTo('Shelves', [
-//            'foreignKey' => 'shelf_id',
-//            'joinType' => 'INNER'
-//        ]);
+        $this->belongsTo('Shelfs', [
+           'foreignKey' => 'shelf_id',
+            'joinType' => 'INNER'
+        ]);
 //        $this->hasMany('Reservations', [
 //            'foreignKey' => 'book_id'
 //        ]);
-//        $this->belongsToMany('Disciplines', [
-//            'foreignKey' => 'book_id',
-//            'targetForeignKey' => 'discipline_id',
-//            'joinTable' => 'books_disciplines'
-//        ]);
+        $this->belongsToMany('Disciplines', [
+            'foreignKey' => 'book_id',
+            'targetForeignKey' => 'discipline_id',
+            'joinTable' => 'books_disciplines'
+        ]);
     }
 
     /**

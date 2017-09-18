@@ -230,8 +230,8 @@ return [
              */
             //'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => '',
-            'database' => 'livros',
+            'password' => 'root',
+            'database' => 'trabalho_processo_software',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
