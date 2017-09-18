@@ -23,6 +23,8 @@ class BooksController extends AppController
         parent::initialize();
         $this->Auth->allow('find');
         $this->Auth->allow('view');
+        $this->Auth->allow('findWithTitle');
+        
     }
 
     public function index()

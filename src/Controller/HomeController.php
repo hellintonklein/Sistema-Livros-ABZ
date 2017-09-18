@@ -30,6 +30,13 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class HomeController extends AppController {
 
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow('searchBooks');
+        
+    }
     /**
      * Displays a view
      *
@@ -71,16 +78,6 @@ class HomeController extends AppController {
             }
             throw new NotFoundException();
         }
-    }
-
-    public function teste() {
-
-        $books = $this->requestAction(array('controller' => 'Books', 'action' => 'find'));
-        if ($books != 'null') {
-            $this->Flash->error("Não foram encontrados livros");
-        }
-
-        $this->set('books', $books);
     }
 
     public function searchBooks($search) {
