@@ -129,4 +129,12 @@ class BooksController extends AppController
          $this->response->body(json_encode($books));
          return $this->response;
     }
+    
+    public function findWithTitle($title){
+        
+         $books =  $this->Books->find('all')
+            ->where(['Books.title LIKE' => '%'.$title.'%']);
+         $this->response->body(json_encode($books));
+         return $this->response;
+    }
 }
