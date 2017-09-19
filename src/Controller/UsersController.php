@@ -61,7 +61,7 @@ class UsersController extends AppController
                 $this->addShelf($user);
                 $this->Flash->success(__('O usuario foi salvo com sucesso.'));
                     
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'home', 'action' => 'display']);
             }
             $this->Flash->error(__('O usuario não foi salvo. Tente novamente.'));
         }

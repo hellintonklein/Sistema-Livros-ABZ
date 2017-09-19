@@ -10,3 +10,5 @@
 !/tmp/sessions/empty
 /tmp/tests/*
 !/tmp/tests/empty
+/config/app.php
+/nbproject/*

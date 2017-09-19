@@ -10,12 +10,9 @@
     </div>  <!-- /#main -->
 
     <div id="top" class="row">
-        <div class="col-md-3">
-            <h2>Buscar livros</h2>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="input-group h2">
-                <input name="data[search]" class="form-control" id="campoBusca" type="text" placeholder="Pesquisar Livros">
+                <input name="data[search]" class="form-control" id="campoBusca" type="text" placeholder="Pesquisar Livros por título">
                 <span class="input-group-btn">
                     <button class="btn btn-primary" id="buttonBusca">
                         <span class="glyphicon glyphicon-search"></span>
@@ -48,7 +45,7 @@
                             <td><?= $book->author ?></td>
                             <td><?=
                                 $this->Html->link(
-                                        'Ver mais', 'books/view/' . $book->id . '', ['class' => 'btn btn-success btn-sm']
+                                        'Ver mais', '/books/view/' . $book->id . '', ['class' => 'btn btn-success btn-sm']
                                 );
                                 ?></td>
 
