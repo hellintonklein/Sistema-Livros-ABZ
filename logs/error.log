@@ -2904,3 +2904,22 @@ Stack Trace:
 #18 {main}
 
 
+2017-09-18 22:52:50 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\Sistema-Livros-ABZ\src\Template\Books\add.ctp, line 27]
+Request URL: /books/add
+Referer URL: http://localhost/Sistema-Livros-ABZ/shelfs/view
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2017-09-18 22:52:50 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')' in C:\xampp\htdocs\Sistema-Livros-ABZ\src\Template\Books\add.ctp on line 27
+Request URL: /books/add
+Referer URL: http://localhost/Sistema-Livros-ABZ/shelfs/view
+Stack Trace:
+#0 C:\xampp\htdocs\Sistema-Livros-ABZ\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

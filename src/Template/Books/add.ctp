@@ -21,7 +21,10 @@
             echo $this->Form->input('pages');
             echo $this->Form->input('quantity');
             echo $this->Form->input('classification');
-            echo $this->Form->input('disciplines._ids', ['options' => $disciplines]);
+            echo $this->Form->input('disciplines._ids', [
+            'label' => 'Disciplina',
+            'options' => $disciplines,
+            'multiple' => 'checkbox']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

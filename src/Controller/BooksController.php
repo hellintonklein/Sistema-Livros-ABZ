@@ -94,9 +94,10 @@ class BooksController extends AppController
             }
             $this->Flash->error(__('The book could not be saved. Please, try again.'));
         }
-        $shelfs = $this->Books->Shelfs->find('list', ['limit' => 200]);
-        $disciplines = $this->Books->Disciplines->find('list', ['limit' => 200]);
-        $this->set(compact('book', 'shelfs', 'disciplines'));
+        $shelves = $this->Books->Shelfs->find('list', ['limit' => 200]);
+        $disciplines = $this->Books->Disciplines->find('list',['keyField' => 'id','valueField' => 'sigla']);
+        $this->set('disciplines',$disciplines);
+        $this->set(compact('book', 'shelves', 'disciplines'));
         $this->set('_serialize', ['book']);
     }
 
